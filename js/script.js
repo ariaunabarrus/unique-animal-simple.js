@@ -1,5 +1,1 @@
-alert('Hello World!');
-
-let favoriteFood= 'Chicken-Fried Deer Steak and Oranges';
-document.write(favoriteFood);
-
+var pokemonList =[{name: 'Butterfree', height: 1.1, type: ['Bug', 'Flying']},{name: 'Gastly', height: 1.3, type: ['Ghost', 'Poison']},{name: 'Gligar', height: 1.1, type:['Ground', 'Flying']}]
