@@ -25,4 +25,4 @@ for (let i=0; i<pokemonList.length; i++){
 //This code, i have tried to write it in the index, as well as js but i cannot seem to figure out why it will not read the variable or the key can you explain why?.
 //if (pokemonList.type==='Poison'){
  //   document.write("CAUTION POISONOUS.")
-//}
+// }
