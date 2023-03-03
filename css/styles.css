@@ -1,0 +1,17 @@
+
+body {
+    background-color: white;
+    /*i think i will change the background color back to white 
+    and once i add more i will change it too #efe9e4 */
+    font-family:'Montserrat', Arial;
+    font-weight: 200;
+    font-size: 16px;
+    /*sets the font size to 16px; below sets the line-height to 1.6*/
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: var(--header-weight);
+    font-variant: small-caps;
+}
