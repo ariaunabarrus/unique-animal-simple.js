@@ -12,17 +12,39 @@ var pokemonList =[
      type:['Ground', 'Flying']
     }
 ]
-//this for loop will give me the a message based on their heights, i also added a 
-//<br> at the end of the document.write to ensure that there is a line break in the document.
-//now i am going to add the height next to the pokemon name
-for (let i=0; i<pokemonList.length; i++){
-    if (pokemonList[i].height< 1.2 && pokemonList[i].height>1){
-        document.write(pokemonList[i].name + " "+ "("+ pokemonList[i].height + "m)" + " is a smaller sized Pokemon.<br>");
-    }else if (pokemonList[i].height>1.2 && pokemonList[i].height<1.5){
-        document.write(pokemonList[i].name + " " + "(" + pokemonList[i].height + "m)" + " is a Larger sized Pokemon!<br>")
+// for (let i=0; i<pokemonList.length; i++){
+    //if (pokemonList[i].height< 1.2 && pokemonList[i].height>1){
+   //     document.write(pokemonList[i].name + " "+ "("+ pokemonList[i].height + "m)" + " is a smaller sized Pokemon.<br>");
+   // }else if (pokemonList[i].height>1.2 && pokemonList[i].height<1.5){
+  //      document.write(pokemonList[i].name + " " + "(" + pokemonList[i].height + "m)" + " is a Larger sized Pokemon!<br>")
+ //   }
+//}
+pokemonList.forEach(function(pokemon) {
+    console.log('Butterfree' + pokemon.name);
+    console.log(1.1 + pokemon.height);
+    console.log('Gastly' + pokemon.name);
+    console.log(1.3 + pokemon.height);
+    console.log('Gligar' + pokemon.name);
+    console.log(1.1 + pokemon.height);
+  });
+  var pokemonRepository = (function() {
+    var pokemonList = []; // Pokemon array
+  
+    function getAll() {
+      return pokemonList;
     }
-}
-//This code, i have tried to write it in the index, as well as js but i cannot seem to figure out why it will not read the variable or the key can you explain why?.
-//if (pokemonList.type==='Poison'){
- //   document.write("CAUTION POISONOUS.")
-// }
+  
+    function add(pokemon) {
+      if (typeof pokemon === "object") {
+        pokemonList.push(pokemon);
+      } else {
+        console.log("Invalid data. Only objects can be added to the repository.");
+      }
+    }
+  
+    return {
+      getAll: getAll,
+      add: add
+    };
+  })();
+  
